@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Ap_pgracaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>models.entidades.DespesasMeses</class>
+    <class>models.entidades.Residencias</class>
+    <class>models.entidades.TiposVariacaoDespesa</class>
+    <class>models.entidades.Despesas</class>
+    <class>models.entidades.DespesasCategorias</class>
+    <class>models.entidades.Meses</class>
+    <class>models.entidades.ResidenciasUsuarios</class>
+    <class>models.entidades.Usuarios</class>
+    <properties>
+      <!--<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:8889/ap_pgraca?zeroDateTimeBehavior=convertToNull"/>-->
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ap_pgraca?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="ap_pgraca"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="ap_pgraca"/>
+    </properties>
+  </persistence-unit>
+</persistence>
